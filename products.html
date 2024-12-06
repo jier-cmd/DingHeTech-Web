@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品中心 - 顶赫科技</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="顶赫科技" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">关于我们</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="products.html">产品中心</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="download.html">资料下载</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 产品分类导航 -->
+        <section class="product-nav">
+            <div class="container">
+                <h1 class="text-center mb-5">产品中心</h1>
+                <ul class="nav nav-pills justify-content-center mb-5" id="productTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#industrial-robots">工业机器人</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#control-systems">控制系统</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#automation-equipment">自动化设备</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="productTabContent">
+                    <!-- 工业机器人 -->
+                    <div class="tab-pane fade show active" id="industrial-robots">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="product-showcase">
+                                    <div class="product-main">
+                                        <img src="images/avatar1.jpg" alt="六轴机器人" class="img-fluid main-image">
+                                        <img src="images/avatar1-1.jpg" alt="六轴机器人介绍" class="img-fluid detail-image">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>DH-R6 六轴机器人</h3>
+                                        <p>适用于焊接、搬运、装配等多种工业场景</p>
+                                        <ul class="features">
+                                            <li>负载：6-20kg</li>
+                                            <li>臂展：1.4m</li>
+                                            <li>重复定位精度：±0.02mm</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 mb-4">
+                                <div class="product-showcase">
+                                    <div class="product-main">
+                                        <img src="images/avatar2.jpg" alt="四轴机器人" class="img-fluid main-image">
+                                        <img src="images/avatar2-2.jpg" alt="四轴机器人介绍" class="img-fluid detail-image">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>DH-R4 SCARA机器人</h3>
+                                        <p>高速、高精度的装配和搬运解决方案</p>
+                                        <ul class="features">
+                                            <li>负载：3-8kg</li>
+                                            <li>臂展：0.8m</li>
+                                            <li>重复定位精度：±0.01mm</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-4">
+                                <div class="product-showcase">
+                                    <div class="product-main">
+                                        <img src="images/avatar3.jpg" alt="协作机器人" class="img-fluid main-image">
+                                        <img src="images/avatar3-3.jpg" alt="协作机器人介绍" class="img-fluid detail-image">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>DH-RC 协作机器人</h3>
+                                        <p>安全可靠的人机协作解决方案</p>
+                                        <ul class="features">
+                                            <li>负载：3-12kg</li>
+                                            <li>臂展：1.2m</li>
+                                            <li>安全等级：ISO 10218-1</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 控制系统 -->
+                    <div class="tab-pane fade" id="control-systems">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <img src="images/control1.jpg" alt="机器人控制器" class="img-fluid">
+                                    <div class="product-info">
+                                        <h3>DH-C100 机器人控���器</h3>
+                                        <p>高性能多轴运动控制系统</p>
+                                        <ul class="features">
+                                            <li>支持最多8轴同步控制</li>
+                                            <li>内置PLC功能</li>
+                                            <li>支持以太网通信</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <img src="images/control2.jpg" alt="视觉系统" class="img-fluid">
+                                    <div class="product-info">
+                                        <h3>DH-V200 机器视觉系统</h3>
+                                        <p>智能视觉引导和检测系统</p>
+                                        <ul class="features">
+                                            <li>高精度定位</li>
+                                            <li>缺陷检测</li>
+                                            <li>尺寸测量</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 自动化设备 -->
+                    <div class="tab-pane fade" id="automation-equipment">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <img src="images/auto1.jpg" alt="自动化生产线" class="img-fluid">
+                                    <div class="product-info">
+                                        <h3>DH-AL 自动化生产线</h3>
+                                        <p>定制化自动化生产线解决方案</p>
+                                        <ul class="features">
+                                            <li>模块化设计</li>
+                                            <li>柔性化生产</li>
+                                            <li>智能化管理</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <img src="images/auto2.jpg" alt="AGV小车" class="img-fluid">
+                                    <div class="product-info">
+                                        <h3>DH-AGV 智能搬运车</h3>
+                                        <p>智能物流搬运解决方案</p>
+                                        <ul class="features">
+                                            <li>激光导航</li>
+                                            <li>自动避障</li>
+                                            <li>负载：500kg</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>联系我们</h4>
+                    <p>电话：400-123-4567</p>
+                    <p>邮箱：info@dinghe.com</p>
+                    <p>地址：深圳市南山区科技园</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>快速链接</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="download.html">资料下载</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="me-2"><i class="bi bi-weixin"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0"> 2024 顶赫科技 版权所有</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
