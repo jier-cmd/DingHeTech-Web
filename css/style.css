@@ -531,6 +531,28 @@ footer a:hover {
     color: var(--primary-color);
 }
 
+/* 新增二维码样式 */
+.qr-code {
+    background: rgba(255,255,255,0.1);
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.qr-code img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+}
+
+.qr-code p {
+    font-size: 12px;
+    margin: 5px 0 0;
+    text-align: center;
+}
+
 .social-links {
     margin-top: 20px;
 }
@@ -554,16 +576,17 @@ footer a:hover {
 }
 
 /* 响应式调整 */
-@media (max-width: 991px) {
-    .navbar-collapse {
-        background: #fff;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-}
-
 @media (max-width: 768px) {
+    .qr-code img {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .qr-code p {
+        font-size: 11px;
+    }
+    
+    /* 保留其他原有的响应式样式 */
     .carousel-item {
         height: 400px;
     }
