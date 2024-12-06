@@ -741,3 +741,76 @@ main section:first-child {
     font-size: 20px;
     line-height: 1;
 }
+
+/* 核心产品样式 */
+.core-products .product-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.core-products .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.core-products .product-icon {
+    margin-bottom: 20px;
+}
+
+.core-products .product-icon i {
+    font-size: 48px;
+    color: var(--primary-color);
+    background: var(--light-gray);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.core-products .product-card:hover .product-icon i {
+    background: var(--primary-color);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.core-products .product-info {
+    padding: 0;
+}
+
+.core-products .product-info h3 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.core-products .product-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .core-products .product-card {
+        padding: 20px 15px;
+    }
+    
+    .core-products .product-icon i {
+        font-size: 36px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    
+    .core-products .product-info h3 {
+        font-size: 18px;
+    }
+}
