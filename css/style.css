@@ -38,9 +38,35 @@ body {
     padding: 8px 0;
 }
 
+.navbar-brand {
+    padding: 0;
+    margin-right: 2rem;
+}
+
 .navbar-brand img {
-    height: 40px;
-    transition: all 0.3s ease;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.company-slogan {
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .nav-link {
@@ -548,6 +574,18 @@ footer a:hover {
 
     .carousel-caption p {
         font-size: 16px;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+    
+    .company-name {
+        font-size: 20px;
+    }
+    
+    .company-slogan {
+        font-size: 10px;
     }
 }
 
