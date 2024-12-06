@@ -491,53 +491,67 @@ body {
     box-shadow: 0 5px 15px rgba(0,82,147,0.3);
 }
 
-/* 页脚样式 */
+/* 页脚样式优化 */
 footer {
     background-color: #1a1a1a;
-    color: #fff;
     padding: 60px 0 30px;
+    letter-spacing: 0.3px;
 }
 
 footer h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 25px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-footer p {
-    color: rgba(255,255,255,0.7);
-    margin-bottom: 10px;
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contact-info .contact-item i {
+    color: rgba(255,255,255,0.6);
     font-size: 14px;
-}
-
-footer a {
-    color: rgba(255,255,255,0.7);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 14px;
-}
-
-footer a:hover {
-    color: var(--primary-color);
-}
-
-.footer-contact {
-    margin-bottom: 30px;
-}
-
-.footer-contact i {
     margin-right: 10px;
-    color: var(--primary-color);
 }
 
-/* 新增二维码样式 */
+.contact-info .contact-item span {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 .qr-code {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
     padding: 8px;
     border-radius: 4px;
     display: inline-block;
-    margin-bottom: 10px;
 }
 
 .qr-code img {
@@ -548,67 +562,54 @@ footer a:hover {
 }
 
 .qr-code p {
+    color: rgba(255,255,255,0.6);
     font-size: 12px;
-    margin: 5px 0 0;
-    text-align: center;
+    margin: 8px 0 0;
+    font-weight: 300;
 }
 
-.social-links {
-    margin-top: 20px;
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-.social-links a {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.1);
-    color: #fff;
-    margin-right: 10px;
-    transition: all 0.3s ease;
+.footer-bottom p {
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
 }
 
-.social-links a:hover {
-    background: var(--primary-color);
-    transform: translateY(-3px);
-}
-
-/* 响应式调整 */
 @media (max-width: 768px) {
+    footer {
+        padding: 40px 0 20px;
+    }
+
+    footer h4 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info .contact-item {
+        margin-bottom: 12px;
+    }
+
+    .contact-info .contact-item span {
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+
     .qr-code img {
         width: 75px;
         height: 75px;
     }
-    
+
     .qr-code p {
         font-size: 11px;
-    }
-    
-    /* 保留其他原有的响应式样式 */
-    .carousel-item {
-        height: 400px;
-    }
-
-    .carousel-caption h1 {
-        font-size: 28px;
-    }
-
-    .carousel-caption p {
-        font-size: 16px;
-    }
-
-    .navbar-brand img {
-        height: 40px;
-    }
-    
-    .company-name {
-        font-size: 20px;
-    }
-    
-    .company-slogan {
-        font-size: 10px;
     }
 }
 
