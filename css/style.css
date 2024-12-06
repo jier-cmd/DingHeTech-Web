@@ -937,3 +937,66 @@ main section:first-child {
         font-size: 16px;
     }
 }
+
+/* 公司优势样式 */
+.advantages {
+    background-color: var(--light-gray);
+}
+
+.advantage-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.advantage-card i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.advantage-card:hover i {
+    transform: scale(1.1);
+}
+
+.advantage-card h3 {
+    font-size: 22px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.advantage-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .advantage-card {
+        padding: 30px 20px;
+    }
+    
+    .advantage-card i {
+        font-size: 36px;
+    }
+    
+    .advantage-card h3 {
+        font-size: 18px;
+    }
+    
+    .advantage-card p {
+        font-size: 14px;
+    }
+}
