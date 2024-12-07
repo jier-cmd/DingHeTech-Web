@@ -166,25 +166,25 @@ body {
 
 /* 关于我们页面样式 */
 .company-intro {
-    padding: 140px 0 80px;
-    background-color: var(--light-gray);
+    padding: 60px 0;
+    background-color: #fff;
 }
 
 .section-header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    padding-top: 30px;
 }
 
 .section-header h2 {
-    font-size: 16px;
-    color: var(--primary-color);
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    color: #999;
+    margin-bottom: 10px;
 }
 
 .section-header h3 {
-    font-size: 36px;
-    color: var(--secondary-color);
-    font-weight: 600;
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
 }
 
 .intro-features {
@@ -773,8 +773,8 @@ footer h4 {
 }
 
 main {
-    min-height: calc(100vh - var(--navbar-height));
-    padding-top: 150px;
+    padding-top: 76px;
+    background-color: #fff;
 }
 
 main section {
@@ -1125,4 +1125,9 @@ main section:first-child {
     .advantage-card p {
         font-size: 14px;
     }
+}
+
+/* 移除多余的section标签样式 */
+section:empty {
+    display: none;
 }
