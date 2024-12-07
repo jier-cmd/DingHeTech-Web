@@ -419,17 +419,37 @@ body {
 }
 
 .product-nav .nav-pills .nav-link {
-    color: var(--secondary-color);
-    font-size: 16px;
+    color: #666;
     padding: 12px 30px;
-    border-radius: 30px;
     margin: 0 10px;
+    border-radius: 30px;
+    font-weight: 500;
     transition: all 0.3s ease;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.product-nav .nav-pills .nav-link:hover {
+    color: #333;
 }
 
 .product-nav .nav-pills .nav-link.active {
-    background-color: var(--primary-color);
-    color: #fff !important;
+    color: #333;
+    background-color: transparent;
+    border-color: #ddd;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.product-nav .nav-pills .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #333;
 }
 
 .product-nav .nav-pills .nav-link:hover:not(.active) {
@@ -509,17 +529,37 @@ body {
 
 /* 分类导航样式 */
 .nav-pills .nav-link {
-    color: #333;
+    color: #666;
     padding: 12px 30px;
     margin: 0 10px;
     border-radius: 30px;
     font-weight: 500;
     transition: all 0.3s ease;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.nav-pills .nav-link:hover {
+    color: #333;
 }
 
 .nav-pills .nav-link.active {
-    background-color: #0056b3;
-    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.2);
+    color: #333;
+    background-color: transparent;
+    border-color: #ddd;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.nav-pills .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #333;
 }
 
 /* 下载卡片样式优化 */
