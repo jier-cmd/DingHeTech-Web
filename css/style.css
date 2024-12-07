@@ -1131,3 +1131,40 @@ main section:first-child {
 section:empty {
     display: none;
 }
+
+/* 主内容区域统一样式 */
+main {
+    padding-top: 76px;
+    background-color: #fff;
+}
+
+/* 所有页面的section统一样式 */
+.company-intro,
+.product-nav,
+.download-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+/* 所有页面的标题统一样式 */
+.section-header,
+.product-nav h1,
+.download-section h1 {
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+/* 标题样式统一 */
+.section-header h2,
+.product-nav h1,
+.download-section h1 {
+    font-size: 24px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.section-header h3 {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
