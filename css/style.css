@@ -738,7 +738,7 @@ footer h4 {
     }
 }
 
-/* 通用工具类 */
+/* 通���工具类 */
 .section-title {
     text-align: center;
     margin-bottom: 50px;
@@ -1167,4 +1167,63 @@ main {
     font-size: 32px;
     color: #333;
     font-weight: bold;
+}
+
+/* 页脚三栏布局 */
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .col-md-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 联系信息布局 */
+.contact-info {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-left: 50px !important;  /* 统一左侧内边距 */
+}
+
+.contact-info .contact-item i {
+    min-width: 20px;
+    margin-right: 10px;
+    text-align: center;  /* 图标居中对齐 */
+}
+
+.contact-info .contact-item span {
+    flex: 1;
+    text-align: left;  /* 确保所有文字左对齐 */
+    padding-right: 15px;  /* 右侧添加一些内边距 */
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    footer .row {
+        flex-direction: column;
+    }
+    
+    footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+    
+    .contact-info {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .contact-info .contact-item {
+        padding-left: 30px !important;
+    }
 }
