@@ -15,8 +15,12 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="顶赫科技" height="40">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="顶赫科技" height="50">
+                    <div class="brand-text">
+                        <span class="company-name">顶赫科技</span>
+                        <span class="company-slogan">DINGHE TECHNOLOGY</span>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -24,10 +28,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">首页</a>
+                            <a class="nav-link active" href="index.html">首页</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">关于我们</a>
+                            <a class="nav-link" href="about.html">关于我们</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="products.html">产品中心</a>
@@ -42,81 +46,59 @@
     </header>
 
     <main>
-        <!-- 公司简介 -->
-        <section class="company-intro" style="margin-top: 100px; padding: 60px 0;">
+        <!-- 页面标题 -->
+        <section class="page-banner">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <h1 class="mb-4">关于顶赫科技</h1>
-                        <p class="lead mb-4">顶赫科技是一家专注于工业自动化解决方案的高科技企业，致力于为制造业提供智能化、高效率的机器人系统集成服务。</p>
-                        <p>成立至今，我们始终坚持"创新驱动发展，品质赢得未来"的经营理念，不断提升技术实力和服务水平，为客户创造更大的价值。</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/about-company.jpg" alt="公司简介" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 发展历程 -->
-        <section class="history py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">发展历程</h2>
-                <div class="timeline">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="timeline-item">
-                                <h3>2018</h3>
-                                <p>公司成立，进入工业自动化领域</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="timeline-item">
-                                <h3>2019</h3>
-                                <p>获得多项技术专利，建立研发中心</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="timeline-item">
-                                <h3>2021</h3>
-                                <p>成功开发新一代机器人控制系统</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="timeline-item">
-                                <h3>2023</h3>
-                                <p>完成B轮融资，加速市场扩张</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 核心优势 -->
-        <section class="core-advantages py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">核心优势</h2>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="advantage-card">
-                            <i class="bi bi-lightbulb-fill"></i>
-                            <h3>技术创新</h3>
-                            <p>拥有多项自主知识产权，不断推动技术革新</p>
+                    <div class="col-12 text-center">
+                        <h1>关于我们</h1>
+                        <p>智能制造的引领者 · 工业自动化的践行者</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 公司简介 -->
+        <section class="company-intro">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>COMPANY INTRODUCTION</h2>
+                    <h3>公司介绍</h3>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="intro-content">
+                            <p class="lead">嘉兴顶赫智能科技有限公司入驻于嘉兴蒙士特数字智能制造产业园，公司定位于中高端压铸行业的相关自动化设备研发、制造、销售与服务一体的企业。</p>
+                            <div class="intro-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>专业的压铸自动化设备研发团队</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>完整的产品线和解决方案</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>优质的售后服务支持</span>
+                                </div>
+                            </div>
+                            <p class="mt-4">公司主要产品有：给汤机器人、取件及镶嵌机器人以及压铸件的冷却浇冒口清除(切边机)、去毛刺机器人、RV双伺服给汤机、RV伺服喷雾机、RV双伺服取件机、热室取喷一体机、喷涂机器人等智能压铸岛系统及压铸周边各种自动化应用。</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="advantage-card">
-                            <i class="bi bi-people-fill"></i>
-                            <h3>专业团队</h3>
-                            <p>汇聚行业精英，提供专业解决方案</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="advantage-card">
-                            <i class="bi bi-graph-up"></i>
-                            <h3>服务保障</h3>
-                            <p>全方位售后支持，确保系统稳定运行</p>
+                    <div class="col-lg-6">
+                        <div class="intro-images">
+                            <div class="main-image">
+                                <img src="images/factory.jpg" alt="智能制造车间">
+                            </div>
+                            <div class="sub-images">
+                                <div class="sub-image">
+                                    <img src="images/robot.jpg" alt="工业机器人">
+                                </div>
+                                <div class="sub-image">
+                                    <img src="images/control.jpg" alt="控制系统">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,32 +106,73 @@
         </section>
 
         <!-- 企业文化 -->
-        <section class="culture py-5 bg-light">
+        <section class="culture">
             <div class="container">
-                <h2 class="text-center mb-5">企业文化</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="culture-card">
-                            <h3>企业愿景</h3>
-                            <p>成为全球领先的工业自动化解决方案提供商</p>
+                <div class="section-header text-center">
+                    <h2>CORPORATE CULTURE</h2>
+                    <h3>企业文化</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="culture-values">
+                            <div class="value-item">
+                                <div class="value-number">01</div>
+                                <h4>自强</h4>
+                                <p>持续进取，永不止步</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-number">02</div>
+                                <h4>拼搏</h4>
+                                <p>勇于挑战，追求卓越</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-number">03</div>
+                                <h4>创新</h4>
+                                <p>开拓进取，引领未来</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-number">04</div>
+                                <h4>务实</h4>
+                                <p>脚踏实地，精益求精</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="culture-card">
+                </div>
+            </div>
+        </section>
+
+        <!-- 企业使命和愿景 -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="mission-card">
+                            <div class="card-icon">
+                                <i class="bi bi-flag-fill"></i>
+                            </div>
+                            <h2>CORPORATE MISSION</h2>
                             <h3>企业使命</h3>
-                            <p>用智能科技推动制造业升级</p>
+                            <p>解决客户痛点问题，为客户降本增效。</p>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="culture-card">
-                            <h3>核心价值观</h3>
-                            <p>创新、专注、诚信、共赢</p>
+                    <div class="col-md-4">
+                        <div class="mission-card">
+                            <div class="card-icon">
+                                <i class="bi bi-eye-fill"></i>
+                            </div>
+                            <h2>CORPORATE VISION</h2>
+                            <h3>企业愿景</h3>
+                            <p>成为全球压铸及周边自动化设备领域的领军企业，持续创新，为客户提供高效、智能的制造解决方案。</p>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="culture-card">
-                            <h3>经营理念</h3>
-                            <p>以客户为中心，以质量为生命</p>
+                    <div class="col-md-4">
+                        <div class="mission-card">
+                            <div class="card-icon">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <h2>VALUES</h2>
+                            <h3>价值观</h3>
+                            <p>致力于提升压铸及周边自动化设备的技术水平，推动行业进步，为客户创造价值。</p>
                         </div>
                     </div>
                 </div>
@@ -157,34 +180,54 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-light py-4">
+    <!-- 页脚 -->
+    <footer>
         <div class="container">
-            <div class="row">
+            <div class="row text-center g-4">
+                <!-- 联系我们 -->
                 <div class="col-md-4">
                     <h4>联系我们</h4>
-                    <p>电话：400-123-4567</p>
-                    <p>邮箱：info@dinghe.com</p>
-                    <p>地址：深圳市南山区科技园</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>159 2198 0098</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>W15921980098@163.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>浙江省嘉兴市平湖市当湖街道乍王线虹霓段188号5号楼一层102号</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 快速链接 -->
                 <div class="col-md-4">
                     <h4>快速链接</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="about.html">关于我们</a></li>
-                        <li><a href="products.html">产品中心</a></li>
-                        <li><a href="download.html">资料下载</a></li>
-                    </ul>
+                    <div class="footer-links">
+                        <div><a href="about.html">关于我们</a></div>
+                        <div><a href="products.html">产品中心</a></div>
+                        <div><a href="download.html">资料下载</a></div>
+                    </div>
                 </div>
+
+                <!-- 关注我们 -->
                 <div class="col-md-4">
                     <h4>关注我们</h4>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="bi bi-weixin"></i></a>
-                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    <div class="qr-code">
+                        <img src="images/QR.png" alt="微信公众号">
+                        <p>扫码关注公众号</p>
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <p class="mb-0"> 2024 顶赫科技 版权所有</p>
+
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>© 2024 顶赫科技 版权所有</p>
+                    </div>
                 </div>
             </div>
         </div>
