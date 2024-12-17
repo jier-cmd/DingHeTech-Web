@@ -166,8 +166,59 @@ body {
 
 /* 关于我们页面样式 */
 .company-intro {
-    padding: 60px 0;
+    padding: 80px 0 60px;
     background-color: #fff;
+}
+
+.company-intro-text {
+    position: relative;
+    padding: 40px 60px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    margin: 30px 0 50px;
+}
+
+.company-intro-text::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 60px;
+    color: var(--primary-color);
+    opacity: 0.1;
+    font-family: serif;
+}
+
+.company-intro-text::after {
+    content: '"';
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 60px;
+    color: var(--primary-color);
+    opacity: 0.1;
+    font-family: serif;
+}
+
+.company-intro-text .lead {
+    color: #333;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-indent: 2em;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .company-intro-text {
+        padding: 30px 25px;
+    }
+    
+    .company-intro-text .lead {
+        font-size: 1.1rem;
+    }
 }
 
 .section-header {
@@ -1341,11 +1392,11 @@ footer .col-md-4 {
 /* 使命愿景部分样式 */
 .mission-vision {
     padding: 80px 0;
-    background-color: #f8f9fa;  /* 浅灰色背景 */
+    background-color: #fff;  /* 改为白色背景 */
 }
 
 .mission-card {
-    background: white;
+    background: #f8f9fa;  /* 卡片背景改为浅灰色，与上面的风格保持一致 */
     padding: 40px 30px;
     height: 100%;
     border-radius: 8px;
@@ -1360,11 +1411,24 @@ footer .col-md-4 {
 
 .mission-card .card-icon {
     margin-bottom: 25px;
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .mission-card .card-icon i {
-    font-size: 2.5rem;
-    color: #e67e22;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.mission-card:hover .card-icon {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 82, 147, 0.3);
 }
 
 .mission-card h2 {
@@ -1386,7 +1450,7 @@ footer .col-md-4 {
     line-height: 1.8;
     margin: 0;
     text-align: left;
-    text-indent: 2em;  /* 首行缩进 */
+    text-indent: 2em;
 }
 
 /* 调整卡片间距 */
@@ -1455,6 +1519,98 @@ footer .col-md-4 {
     }
     
     .case-card {
+        margin-bottom: 20px;
+    }
+}
+
+.intro-description {
+    padding: 20px 0;
+}
+
+.intro-description .lead {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .intro-description .lead {
+        font-size: 1.2rem;
+    }
+}
+
+/* 合作伙伴部分 */
+.partners {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.partners-grid {
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.partner-logo {
+    padding: 20px;
+    text-align: center;
+}
+
+.partner-logo img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+/* 资质证书部分 */
+.certificates {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.cert-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-image {
+    position: relative;
+    padding: 20px;
+}
+
+.cert-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .partners,
+    .certificates {
+        padding: 40px 0;
+    }
+    
+    .partners-grid {
+        padding: 15px;
+    }
+    
+    .cert-card {
         margin-bottom: 20px;
     }
 }
