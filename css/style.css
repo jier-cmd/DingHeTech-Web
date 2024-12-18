@@ -466,13 +466,16 @@ body {
 }
 
 .product-nav .nav-pills {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     margin-bottom: 50px;
 }
 
 .product-nav .nav-pills .nav-link {
-    color: #666;
+    min-width: 120px;
+    text-align: center;
     padding: 12px 30px;
-    margin: 0 10px;
     border-radius: 30px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -613,7 +616,7 @@ body {
     background-color: #333;
 }
 
-/* 下载卡片样式优化 */
+/* 下��卡片样式优化 */
 .download-card {
     background: white;
     padding: 25px;
