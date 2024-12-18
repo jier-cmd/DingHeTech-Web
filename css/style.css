@@ -1614,3 +1614,27 @@ footer .col-md-4 {
         margin-bottom: 20px;
     }
 }
+
+.product-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.product-intro .lead {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .product-intro .lead {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+.text-indent {
+    text-indent: 2em;  /* 缩进2个字符的宽度 */
+}
