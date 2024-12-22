@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>产品中心 - 顶赫科技</title>
+        <!-- Favicon 
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+    -->
+    <!-- 或者使用PNG格式 -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -75,7 +82,6 @@
                                 <div class="product-showcase">
                                     <div class="product-main">
                                         <img src="images/product1.png" alt="DH-给汤机" class="img-fluid main-image">
-                                        <img src="images/production1.jpg" alt="DH-给汤机介绍" class="img-fluid detail-image">
                                     </div>
                                     <div class="product-info">
                                         <h3>DH-给汤机</h3>
@@ -85,7 +91,7 @@
                                             <li>采用数控加工中心一次性加工完成,加工精度高,机械强度好</li>
                                             <li>采用日本NSK轴承及进口油封</li>
                                         </ul>
-                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product1Modal">了解详情</a>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +100,6 @@
                                 <div class="product-showcase">
                                     <div class="product-main">
                                         <img src="images/product2.png" alt="DH-喷雾机" class="img-fluid main-image">
-                                        <img src="images/production2.jpg" alt="DH-喷雾机介绍" class="img-fluid detail-image">
                                     </div>
                                     <div class="product-info">
                                         <h3>DH-喷雾机</h3>
@@ -104,16 +109,15 @@
                                             <li>采用台湾进口减速机,日本NSK轴承</li>
                                             <li>可选择铜管式喷头或独立雾化喷头</li>
                                         </ul>
-                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product2Modal">了解详情</a>
                                     </div>
                                 </div>
                             </div>
-
+                
                             <div class="col-lg-6 mb-4">
                                 <div class="product-showcase">
                                     <div class="product-main">
                                         <img src="images/product3.png" alt=":DH-热式取件喷雾机" class="img-fluid main-image">
-                                        <img src="images/production3.jpg" alt=":DH-热式取件喷雾机介绍" class="img-fluid detail-image">
                                     </div>
                                     <div class="product-info">
                                         <h3>DH-热式取件喷雾机</h3>
@@ -123,55 +127,124 @@
                                             <li>多方位快速灵活调节,适用不同机型</li>
                                             <li>独特称重检出装置,防止撞坏模具,可选光电检测</li>
                                         </ul>
-                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product3Modal">了解详情</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                
                     <!-- 工业机器人 -->
                     <div class="tab-pane fade" id="control-systems">
                         <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="product-card">
-                                    <img src="images/product4.png" alt="DH-给汤机器人" class="img-fluid">
-                                    <img src="images/production4.jpg" alt=":DH-给汤机器人" class="img-fluid detail-image">
+                            <div class="col-lg-6 mb-4">
+                                <div class="product-showcase">
+                                    <div class="product-main">
+                                        <img src="images/product4.png" alt="DH-给汤机器人" class="img-fluid main-image">
+                                    </div>
                                     <div class="product-info">
                                         <h3>DH-给汤机器人(行业首创)</h3>
                                         <p>产品特点/Features:</p>
                                         <ul class="features">
-                                            <li>目前市面上使用的都是传统人工或者给汤机进行压铸机给汤工作,目前我们团队研发出机器人给
-                                                汤,需汤量检测装置来引导机器人进行增量式相对运动,使其每次都能保证机器人取汤汤量的一致性
-                                                此产品主要技术及创新点就在于汤勺的设计开模批量生产及软件编程给汤程序及工艺</li>
-                                          
+                                            <li>增量式相对运动</li>
+                                            <li>保证机器人取汤汤量的一致性</li>
+                                            <li>软件编程给汤程序及工艺</li>
                                         </ul>
-                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product4Modal">了解详情</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="product-card">
-                                    <img src="images/product5.png" alt="DH-取件、喷雾机器人" class="img-fluid">
-                                    <img src="images/production5.jpg" alt=":DH-取件、喷雾机器人" class="img-fluid detail-image">
+                            <div class="col-lg-6 mb-4">
+                                <div class="product-showcase">
+                                    <div class="product-main">
+                                        <img src="images/product5.png" alt="DH-取件、喷雾机器人" class="img-fluid main-image">
+                                    </div>
                                     <div class="product-info">
                                         <h3>DH-取件、喷雾机器人(行业首创)</h3>
                                         <p>产品特点/Features:</p>
                                         <ul class="features">
-                                            <li>这一款产品主要研发技术点在于取件喷雾夹爪,此夹爪设计正在申请发明专利中,夹爪内的喷雾
-                                                水系统经过多年研发测试,夹爪上的喷雾系统能够水流均匀高压式喷散出雾状液体。创新点在于先取
-                                                件再第一排铜管进行喷雾,最后一排铜管进行吹气,取件喷雾工艺简单、省时,取件喷雾夹爪不仅能
-                                                够满足客户取件、喷雾功能而且还能取件喷雾一次性成型,大大提升生产节拍,能够节省大约1/3的
-                                                时间节拍,特别适合薄型产品的压铸,如烤盘、面包板,手机中板之类的产品</li>
+                                            <li>取件喷雾夹爪正在申请发明专利中</li>
+                                            <li>夹爪内的喷雾 水系统经过多年研发测试</li>
+                                            <li>喷雾系统能够水流均匀高压式喷散出雾状液体</li>
                                         </ul>
-                                        <a href="#" class="btn btn-primary">了解详情</a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product5Modal">了解详情</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
+                </div>
+                
+                <!-- 模态框 -->
+                <div class="modal fade" id="product1Modal" tabindex="-1" aria-labelledby="product1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="product1ModalLabel">DH-给汤机</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/production1.jpg" alt="DH-给汤机介绍" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="product2Modal" tabindex="-1" aria-labelledby="product2ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="product2ModalLabel">DH-喷雾机</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/production2.jpg" alt="DH-喷雾机介绍" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="product3Modal" tabindex="-1" aria-labelledby="product3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="product3ModalLabel">DH-热式取件喷雾机</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/production3.jpg" alt="DH-热式取件喷雾机介绍" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="product4Modal" tabindex="-1" aria-labelledby="product4ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="product4ModalLabel">DH-给汤机器人</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/production4.png" alt="DH-给汤机器人介绍" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="product5Modal" tabindex="-1" aria-labelledby="product5ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="product5ModalLabel">DH-取件、喷雾机器人</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/production5.png" alt="DH-取件、喷雾机器人介绍" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <!-- 应用案例 -->
@@ -183,46 +256,46 @@
                 </div>
                 <div class="row">
                     <!-- 应用案例-压铸 -->
-                    <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-6 mb-4">
                         <div class="case-card">
                             <div class="case-header">
                                 <h4>应用案例-压铸</h4>
                             </div>
                             <div class="case-image">
-                                <img src="images/real1.png" alt="压铸应用案例">
+                                <img src="images/real1.png" alt="压铸应用案例"  class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <!-- 应用案例-打磨 -->
-                    <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-6 mb-4">
                         <div class="case-card">
                             <div class="case-header">
                                 <h4>应用案例-打磨</h4>
                             </div>
                             <div class="case-image">
-                                <img src="images/real2.png" alt="打磨应用案例">
+                                <img src="images/real2.png" alt="打磨应用案例"  class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <!-- 应用案例-焊接 -->
-                    <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-6 mb-4">
                         <div class="case-card">
                             <div class="case-header">
                                 <h4>应用案例-焊接</h4>
                             </div>
                             <div class="case-image">
-                                <img src="images/real3.png" alt="焊接应用案例">
+                                <img src="images/real3.png" alt="焊接应用案例"  class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <!-- 应用案例-搬运 -->
-                    <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-6 mb-4">
                         <div class="case-card">
                             <div class="case-header">
                                 <h4>应用案例-搬运</h4>
                             </div>
                             <div class="case-image">
-                                <img src="images/real4.png" alt="搬运应用案例">
+                                <img src="images/real4.png" alt="搬运应用案例"  class="img-fluid">
                             </div>
                         </div>
                     </div>
